@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("./partials/head.ejs") %>
+
+    <body class="bg-yellow-300 min-h-screen p-6 max-w-7xl mx-auto">
+        <!-- Header -->
+        <%- include("./partials/header.ejs") %>
+
+            <!-- Events List -->
+            <div>
+                <!-- Events Header -->
+                <div class="bg-cyan-400 flex justify-between items-center border-4 border-black p-4 neo-shadow">
+                    <h2 class="text-3xl font-bold text-black">EVENT LIST</h2>
+                    <a href="/events/add"
+                        class="inline-block bg-purple-400 border-4 border-black neo-shadow-small px-6 py-2 text-black font-bold text-lg hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                        + ADD NEW EVENT
+                    </a>
+                </div>
+
+                <!-- Events Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-6">
+                    <% events.forEach((event,idx)=> { %>
+                        <!-- Event Card 1 -->
+                        <div class="bg-white border-4 border-black">
+                            <!-- Event Header -->
+                            <div class="<%= idx % 2 === 0? " bg-purple-400" : "bg-cyan-400" %> border-b-4 border-black
+                                p-4">
+                                <h3 class="text-xl font-bold text-black">
+                                    <%= event.name %>
+                                </h3>
+                                <!-- Event Status -->
+                                <div class="mt-2">
+                                    <span
+                                        class="bg-green-300 border-2 border-black px-3 py-1 text-black font-bold text-sm">
+                                        <%= event.eventStatus %>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Event Poster -->
+                            <div class="p-4 bg-pink-200 border-b-4 border-black">
+                                <div class="bg-gray-100 border-2 border-black p-2">
+                                    <img src="<%= event.eventPoster  %>" alt="Event Poster"
+                                        class="w-full h-32 object-cover border-2 border-black bg-gray-200">
+                                </div>
+                            </div>
+
+                            <!-- Event Details -->
+                            <div class="p-4 space-y-3">
+                                <div class="bg-blue-200 border-2 border-black p-3">
+                                    <span class="font-bold text-black text-sm">DESCRIPTION:</span>
+                                    <p class="text-black mt-1">
+                                        <%= event.description %>
+                                    </p>
+                                </div>
+
+                                <div class="bg-green-200 border-2 border-black p-3">
+                                    <span class="font-bold text-black text-sm">TOTAL PRIZE:</span>
+                                    <p class="text-lg text-black font-bold">
+                                        <%= event.formatPrize %>
+                                    </p>
+                                </div>
+
+                                <div class="bg-cyan-200 border-2 border-black p-3">
+                                    <span class="font-bold text-black text-sm">EVENT DATE:</span>
+                                    <p class="text-black font-bold">
+                                        <%= event.formatDate %>
+                                    </p>
+                                </div>
+
+                                <div class="bg-orange-200 border-2 border-black p-3">
+                                    <span class="font-bold text-black text-sm">EVENT TYPE:</span>
+                                    <span
+                                        class="bg-yellow-300 border-2 border-black px-2 py-1 text-black font-bold text-sm">
+                                        <%= event.eventType %>
+                                    </span>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="flex space-x-2 pt-3">
+                                    <a href="/events/detail/<%= event.id %>"
+                                        class="bg-blue-400 border-2 border-black neo-shadow-small px-4 py-2 text-black font-bold text-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                                        DETAIL
+                                    </a>
+                                    <a href="/events/edit/<%= event.id %>"
+                                        class="bg-yellow-400 border-2 border-black neo-shadow-small px-4 py-2 text-black font-bold text-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                                        EDIT
+                                    </a>
+                                    <a href="/events/delete/<%= event.id %>"
+                                        class="bg-red-400 border-2 border-black neo-shadow-small px-4 py-2 text-black font-bold text-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                                        DELETE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <% }) %>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <%- include("./partials/footer.ejs") %>
+    </body>
+
+</html>

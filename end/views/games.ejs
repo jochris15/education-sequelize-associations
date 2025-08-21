@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("./partials/head.ejs") %>
+
+    <body class="bg-yellow-300 min-h-screen p-6 max-w-7xl mx-auto">
+        <!-- Header -->
+        <%- include("./partials/header.ejs") %>
+
+            <!-- Games Table -->
+            <div class="bg-white border-4 border-black neo-shadow overflow-hidden">
+                <div class="bg-black text-white p-4">
+                    <h2 class="text-2xl font-bold">GAME LIST</h2>
+                </div>
+
+                <!-- Table -->
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-pink-400 border-b-4 border-black">
+                            <tr>
+                                <th class="border-r-4 border-black p-4 text-left font-bold text-black">GAME</th>
+                                <th class="border-r-4 border-black p-4 text-left font-bold text-black">RELEASE DATE</th>
+                                <th class="border-r-4 border-black p-4 text-left font-bold text-black">DEVELOPER</th>
+                                <th class="border-r-4 border-black p-4 text-left font-bold text-black">GENRE</th>
+                                <th class="border-r-4 border-black p-4 text-left font-bold text-black">MANAGER IN CHARGE
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% games.forEach((game)=> { %>
+                                <tr
+                                    class="bg-purple-100 border-b-2 border-black hover:bg-orange-200 transition-colors duration-200">
+                                    <td class="border-r-2 border-black p-4">
+                                        <div class="flex items-center space-x-3">
+                                            <img src="<%= game.gameImg  %>" alt="Wuwa"
+                                                class="w-16 h-16 object-cover border-2 border-black rounded-none bg-gray-200">
+                                            <div>
+                                                <div class="font-bold text-black text-lg">
+                                                    <%= game.name %>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="border-r-2 border-black p-4 font-bold text-black">
+                                        <%= game.formatDate %>
+                                    </td>
+                                    <td class="border-r-2 border-black p-4 font-bold text-black">
+                                        <%= game.developer %>
+                                    </td>
+                                    <td class="border-r-2 border-black p-4">
+                                        <span
+                                            class="bg-cyan-300 border-2 border-black px-3 py-1 text-black font-bold text-sm">
+                                            <%= game.genre %>
+                                        </span>
+                                    </td>
+                                    <td class="border-r-2 border-black p-4 font-bold text-black">
+                                        <%= game?.Manager?.name %>
+                                    </td>
+                                </tr>
+                                <% }) %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <%- include("./partials/footer.ejs") %>
+    </body>
+
+</html>

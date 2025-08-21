@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Joshua Diobok-obok",
+        "phone": "08123456789",
+        "GameId": 1
+    },
+    {
+        "name": "Windah Bersaudara",
+        "phone": "08123456789",
+        "GameId": 2
+    },
+    {
+        "name": "Riditya Dicka",
+        "phone": "08123456789",
+        "GameId": 3
+    },
+    {
+        "name": "Miaw Maung",
+        "phone": "08123456789",
+        "GameId": 4
+    },
+    {
+        "name": "Reza Sarap",
+        "phone": "08123456789",
+        "GameId": 5
+    },
+    {
+        "name": "Code Blu",
+        "phone": "08123456789",
+        "GameId": 6
+    },
+    {
+        "name": "Orang random",
+        "phone": "08123456789",
+        "GameId": 7
+    },
+    {
+        "name": "Wibu Genshin",
+        "phone": "08123456789",
+        "GameId": 8
+    },
+    {
+        "name": "Wibu Wuwa",
+        "phone": "08123456789",
+        "GameId": 9
+    }
+]

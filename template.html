@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-SPORT EVENTS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .neo-shadow {
+            box-shadow: 8px 8px 0px #000000;
+        }
+
+        .neo-shadow-small {
+            box-shadow: 4px 4px 0px #000000;
+        }
+    </style>
+</head>
+
+<body class="bg-yellow-300 min-h-screen p-6 max-w-7xl mx-auto">
+    <!-- Header -->
+    <div class="flex items-center justify-between bg-white border-4 border-black neo-shadow mb-8 p-6">
+        <h1 class="text-4xl font-bold text-black">E-SPORT EVENTS</h1>
+        <div class="flex items-center space-x-4">
+            <a href="/games"
+                class="inline-block bg-yellow-400 border-4 border-black neo-shadow-small px-6 py-3 text-black font-bold text-lg hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                ALL GAMES
+            </a>
+            <a href="/managers"
+                class="inline-block bg-yellow-400 border-4 border-black neo-shadow-small px-6 py-3 text-black font-bold text-lg hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                ALL EVENT MANAGERS
+            </a>
+            <a href="/events"
+                class="inline-block bg-yellow-400 border-4 border-black neo-shadow-small px-6 py-3 text-black font-bold text-lg hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                ALL E-SPORT EVENTS
+            </a>
+        </div>
+    </div>
+
+    <!-- Games Table -->
+    <div class="bg-white border-4 border-black neo-shadow overflow-hidden">
+        <div class="bg-black text-white p-4">
+            <h2 class="text-2xl font-bold">GAME LIST</h2>
+        </div>
+
+        <!-- Table -->
+        <div class="overflow-x-auto">
+            <table class="w-full">
+                <thead class="bg-pink-400 border-b-4 border-black">
+                    <tr>
+                        <th class="border-r-4 border-black p-4 text-left font-bold text-black">GAME</th>
+                        <th class="border-r-4 border-black p-4 text-left font-bold text-black">RELEASE DATE</th>
+                        <th class="border-r-4 border-black p-4 text-left font-bold text-black">DEVELOPER</th>
+                        <th class="border-r-4 border-black p-4 text-left font-bold text-black">GENRE</th>
+                        <th class="border-r-4 border-black p-4 text-left font-bold text-black">MANAGER IN CHARGE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- data 1 -->
+                    <tr
+                        class="bg-purple-100 border-b-2 border-black hover:bg-orange-200 transition-colors duration-200">
+                        <td class="border-r-2 border-black p-4">
+                            <div class="flex items-center space-x-3">
+                                <img src="https://blog.rrqtopup.com/wp-content/uploads/2024/05/fy3tj50qp4h3srq6wv-1708420333152%E8%8B%B1%E8%AF%AD.jpg"
+                                    alt="Wuwa"
+                                    class="w-16 h-16 object-cover border-2 border-black rounded-none bg-gray-200">
+                                <div>
+                                    <div class="font-bold text-black text-lg">
+                                        Wuthering Waves
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="border-r-2 border-black p-4 font-bold text-black">
+                            2024-05-15
+                        </td>
+                        <td class="border-r-2 border-black p-4 font-bold text-black">
+                            Kuro Game
+                        </td>
+                        <td class="border-r-2 border-black p-4">
+                            <span class="bg-cyan-300 border-2 border-black px-3 py-1 text-black font-bold text-sm">
+                                RPG
+                            </span>
+                        </td>
+                        <td class="border-r-2 border-black p-4 font-bold text-black">
+                            BAMBANG
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Manager Table -->
+    <div class="bg-white border-4 border-black neo-shadow overflow-hidden">
+        <div class="bg-black text-white p-4">
+            <h2 class="text-2xl font-bold">EVENT MANAGER LIST</h2>
+        </div>
+
+        <!-- Table -->
+        <div class="overflow-x-auto">
+            <table class="w-full">
+                <thead class="bg-pink-400 border-b-4 border-black">
+                    <tr>
+                        <th class="border-r-4 border-black p-4 text-left font-bold text-black">NAME</th>
+                        <th class="border-r-4 border-black p-4 text-left font-bold text-black">PHONE NUMBER</th>
+                        <th class="border-r-4 border-black p-4 text-left font-bold text-black">IN CHARGE FOR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- data 1 -->
+                    <tr
+                        class="bg-purple-100 border-b-2 border-black hover:bg-orange-200 transition-colors duration-200">
+                        <td class="border-r-2 border-black p-4 font-bold text-black">
+                            Bambang
+                        </td>
+                        <td class="border-r-2 border-black p-4 font-bold text-black">
+                            08891289239
+                        </td>
+                        <td class="border-r-2 border-black p-4">
+                            <span class="bg-cyan-300 border-2 border-black px-3 py-1 text-black font-bold text-sm">
+                                Wuthering Waves
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Events List -->
+    <div>
+        <!-- Events Header -->
+        <div class="bg-cyan-400 flex justify-between items-center border-4 border-black p-4 neo-shadow">
+            <h2 class="text-3xl font-bold text-black">EVENT LIST</h2>
+            <a href="/events/add"
+                class="inline-block bg-purple-400 border-4 border-black neo-shadow-small px-6 py-2 text-black font-bold text-lg hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                + ADD NEW EVENT
+            </a>
+        </div>
+
+        <!-- Events Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-6">
+            <!-- Event Card 1 -->
+            <div class="bg-white border-4 border-black">
+                <!-- Event Header -->
+                <div class="bg-purple-400 border-b-4 border-black p-4">
+                    <h3 class="text-xl font-bold text-black">VALORANT CHAMPIONS</h3>
+                    <!-- Event Status -->
+                    <div class="mt-2">
+                        <span class="bg-green-300 border-2 border-black px-3 py-1 text-black font-bold text-sm">
+                            ACTIVE
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Event Poster -->
+                <div class="p-4 bg-pink-200 border-b-4 border-black">
+                    <div class="bg-gray-100 border-2 border-black p-2">
+                        <img src="https://cdn.sanity.io/images/dsfx7636/news_live/a9118d1f77e9f5fd0c292a0c7c4fb860e25af23e-1920x1080.jpg"
+                            alt="Event Poster" class="w-full h-32 object-cover border-2 border-black bg-gray-200">
+                    </div>
+                </div>
+
+                <!-- Event Details -->
+                <div class="p-4 space-y-3">
+                    <div class="bg-blue-200 border-2 border-black p-3">
+                        <span class="font-bold text-black text-sm">DESCRIPTION:</span>
+                        <p class="text-black mt-1">The ultimate VALORANT championship featuring top teams from around
+                            the
+                            world competing for glory and prizes.</p>
+                    </div>
+
+                    <div class="bg-green-200 border-2 border-black p-3">
+                        <span class="font-bold text-black text-sm">TOTAL PRIZE:</span>
+                        <p class="text-lg text-black font-bold">Rp 10,000,000</p>
+                    </div>
+
+                    <div class="bg-cyan-200 border-2 border-black p-3">
+                        <span class="font-bold text-black text-sm">EVENT DATE:</span>
+                        <p class="text-black font-bold">2025-08-15</p>
+                    </div>
+
+                    <div class="bg-orange-200 border-2 border-black p-3">
+                        <span class="font-bold text-black text-sm">EVENT TYPE:</span>
+                        <span class="bg-yellow-300 border-2 border-black px-2 py-1 text-black font-bold text-sm">
+                            OFFLINE
+                        </span>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex space-x-2 pt-3">
+                        <a href="/events/detail/1"
+                            class="bg-blue-400 border-2 border-black neo-shadow-small px-4 py-2 text-black font-bold text-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                            DETAIL
+                        </a>
+                        <a href="/events/edit/1"
+                            class="bg-yellow-400 border-2 border-black neo-shadow-small px-4 py-2 text-black font-bold text-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                            EDIT
+                        </a>
+                        <a href="/events/delete/1"
+                            class="bg-red-400 border-2 border-black neo-shadow-small px-4 py-2 text-black font-bold text-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                            DELETE
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="bg-white border-4 border-black">
+                <!-- Event Header -->
+                <div class="bg-cyan-400 border-b-4 border-black p-4">
+                    <h3 class="text-xl font-bold text-black">DOTA 2 THE INTERNATIONAL</h3>
+                    <!-- Event Status -->
+                    <div class="mt-2">
+                        <span class="bg-red-300 border-2 border-black px-3 py-1 text-black font-bold text-sm">
+                            INACTIVE
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Event Poster -->
+                <div class="p-4 bg-pink-200 border-b-4 border-black">
+                    <div class="bg-gray-100 border-2 border-black p-2">
+                        <img src="https://static.republika.co.id/uploads/images/inpicture_slide/one-esports-dota_200304211713-772.jpg"
+                            alt="Event Poster" class="w-full h-32 object-cover border-2 border-black bg-gray-200">
+                    </div>
+                </div>
+
+                <!-- Event Details -->
+                <div class="p-4 space-y-3">
+                    <div class="bg-blue-200 border-2 border-black p-3">
+                        <span class="font-bold text-black text-sm">DESCRIPTION:</span>
+                        <p class="text-black mt-1">The most prestigious Dota 2 tournament with the highest prize pool in
+                            esports history.</p>
+                    </div>
+
+                    <div class="bg-green-200 border-2 border-black p-3">
+                        <span class="font-bold text-black text-sm">TOTAL PRIZE:</span>
+                        <p class="text-lg text-black font-bold">Rp 15,000,000</p>
+                    </div>
+
+                    <div class="bg-cyan-200 border-2 border-black p-3">
+                        <span class="font-bold text-black text-sm">EVENT DATE:</span>
+                        <p class="text-black font-bold">2025-10-12</p>
+                    </div>
+
+                    <div class="bg-orange-200 border-2 border-black p-3">
+                        <span class="font-bold text-black text-sm">EVENT TYPE:</span>
+                        <span class="bg-yellow-300 border-2 border-black px-2 py-1 text-black font-bold text-sm">
+                            ONLINE
+                        </span>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex space-x-2 pt-3">
+                        <a href="/events/detail/2"
+                            class="bg-blue-400 border-2 border-black neo-shadow-small px-4 py-2 text-black font-bold text-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                            DETAIL
+                        </a>
+                        <a href="/events/edit/2"
+                            class="bg-yellow-400 border-2 border-black neo-shadow-small px-4 py-2 text-black font-bold text-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                            EDIT
+                        </a>
+                        <a href="/events/delete/2"
+                            class="bg-red-400 border-2 border-black neo-shadow-small px-4 py-2 text-black font-bold text-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                            DELETE
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 3 -->
+            <div class="bg-white border-4 border-black">
+                <!-- Event Header -->
+                <div class="bg-purple-400 border-b-4 border-black p-4">
+                    <h3 class="text-xl font-bold text-black">CS2 MAJOR CHAMPIONSHIP</h3>
+                    <!-- Event Status -->
+                    <div class="mt-2">
+                        <span class="bg-green-300 border-2 border-black px-3 py-1 text-black font-bold text-sm">
+                            ACTIVE
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Event Poster -->
+                <div class="p-4 bg-pink-200 border-b-4 border-black">
+                    <div class="bg-gray-100 border-2 border-black p-2">
+                        <img src="https://miro.medium.com/max/800/1*UMKvTYLBrQycJ11Z3AFayg.jpeg" alt="Event Poster"
+                            class="w-full h-32 object-cover border-2 border-black bg-gray-200">
+                    </div>
+                </div>
+
+                <!-- Event Details -->
+                <div class="p-4 space-y-3">
+                    <div class="bg-blue-200 border-2 border-black p-3">
+                        <span class="font-bold text-black text-sm">DESCRIPTION:</span>
+                        <p class="text-black mt-1">Premier Counter-Strike 2 tournament featuring the best teams in
+                            tactical
+                            FPS gaming.</p>
+                    </div>
+
+                    <div class="bg-green-200 border-2 border-black p-3">
+                        <span class="font-bold text-black text-sm">TOTAL PRIZE:</span>
+                        <p class="text-lg text-black font-bold">Rp 20,000,000</p>
+                    </div>
+
+                    <div class="bg-cyan-200 border-2 border-black p-3">
+                        <span class="font-bold text-black text-sm">EVENT DATE:</span>
+                        <p class="text-black font-bold">2025-07-10</p>
+                    </div>
+
+                    <div class="bg-orange-200 border-2 border-black p-3">
+                        <span class="font-bold text-black text-sm">EVENT TYPE:</span>
+                        <span class="bg-yellow-300 border-2 border-black px-2 py-1 text-black font-bold text-sm">
+                            OFFLINE
+                        </span>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex space-x-2 pt-3">
+                        <a href="/events/detail/3"
+                            class="bg-blue-400 border-2 border-black neo-shadow-small px-4 py-2 text-black font-bold text-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                            DETAIL
+                        </a>
+                        <a href="/events/edit/3"
+                            class="bg-yellow-400 border-2 border-black neo-shadow-small px-4 py-2 text-black font-bold text-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                            EDIT
+                        </a>
+                        <a href="/events/delete/3"
+                            class="bg-red-400 border-2 border-black neo-shadow-small px-4 py-2 text-black font-bold text-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                            DELETE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Event Detail -->
+    <div class="bg-white border-4 border-black neo-shadow mb-8">
+        <!-- Event Header -->
+        <div class="bg-purple-400 border-b-4 border-black p-6">
+            <div class="flex justify-between items-start">
+                <h2 class="text-4xl font-bold text-black">VALORANT CHAMPIONS</h2>
+            </div>
+        </div>
+
+        <!-- Event Content -->
+        <div class="p-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Left Column - Event Poster & Basic Info -->
+                <div class="flex flex-col space-y-6 h-full">
+                    <!-- Event Poster -->
+                    <div class="bg-pink-200 border-4 border-black p-6">
+                        <h3 class="text-2xl font-bold text-black mb-4">EVENT POSTER</h3>
+                        <div class="bg-gray-100 border-2 border-black p-4">
+                            <img src="https://cdn.sanity.io/images/dsfx7636/news_live/a9118d1f77e9f5fd0c292a0c7c4fb860e25af23e-1920x1080.jpg"
+                                alt="VALORANT CHAMPIONS Poster"
+                                class="w-full h-64 object-cover border-2 border-black bg-gray-200">
+                        </div>
+                    </div>
+
+                    <!-- Event Basic Info -->
+                    <div class="bg-cyan-200 border-4 border-black p-6 flex-1">
+                        <h3 class="text-2xl font-bold text-black mb-4">EVENT INFORMATION</h3>
+                        <div class="space-y-4">
+                            <div class="bg-white border-2 border-black p-4">
+                                <span class="font-bold text-black text-lg">EVENT DATE:</span>
+                                <p class="text-black font-bold text-xl mt-1">August 15, 2025</p>
+                            </div>
+                            <div class="bg-white border-2 border-black p-4">
+                                <span class="font-bold text-black text-lg">EVENT TYPE:</span>
+                                <span
+                                    class="bg-yellow-300 border-2 border-black px-3 py-1 text-black font-bold text-lg ml-2">
+                                    OFFLINE
+                                </span>
+                            </div>
+                            <div class="bg-white border-2 border-black p-4">
+                                <span class="font-bold text-black text-lg">EVENT STATUS:</span>
+                                <span
+                                    class="bg-green-300 border-2 border-black px-3 py-1 text-black font-bold text-lg ml-2">
+                                    ACTIVE
+                                </span>
+                            </div>
+                            <div class="bg-white border-2 border-black p-4">
+                                <span class="font-bold text-black text-lg">TOTAL PRIZE:</span>
+                                <p class="text-black font-bold text-2xl mt-1 text-green-600">Rp 10,000,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Description & Game Info -->
+                <div class="flex flex-col space-y-6 h-full">
+                    <!-- Event Description -->
+                    <div class="bg-blue-200 border-4 border-black p-6">
+                        <h3 class="text-2xl font-bold text-black mb-4">EVENT DESCRIPTION</h3>
+                        <div class="bg-white border-2 border-black p-4">
+                            <p class="text-black text-lg leading-relaxed">
+                                The ultimate VALORANT championship featuring top teams from around the world competing
+                                for glory and prizes.
+                                This tournament brings together the best tactical FPS players in an intense competition
+                                that will determine
+                                the ultimate VALORANT champion. Experience the thrill of professional esports at its
+                                finest with amazing
+                                gameplay, strategic depth, and incredible prize pools.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Game Information -->
+                    <div class="bg-green-200 border-4 border-black p-6">
+                        <h3 class="text-2xl font-bold text-black mb-4">GAME INFORMATION</h3>
+                        <div class="bg-white border-2 border-black p-4">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <img src="https://cdn1-production-images-kly.akamaized.net/2cz3nNAb61C_WtZDIByp9jys2Ww=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3142622/original/000361800_1591163362-valorant-2.jpg"
+                                    alt="Valorant"
+                                    class="w-16 h-16 object-cover border-2 border-black rounded-none bg-gray-200">
+                                <div>
+                                    <h4 class="font-bold text-black text-xl">VALORANT</h4>
+                                    <p class="text-black">by Riot Games</p>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex justify-between">
+                                    <span class="font-bold text-black">Release Date:</span>
+                                    <span class="text-black">June 2, 2020</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-bold text-black">Genre:</span>
+                                    <span
+                                        class="bg-cyan-300 border-2 border-black px-2 py-1 text-black font-bold text-sm">
+                                        FPS
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event Manager Information -->
+                    <div class="bg-orange-200 border-4 border-black p-6 flex-1">
+                        <h3 class="text-2xl font-bold text-black mb-4">EVENT MANAGER</h3>
+                        <div class="bg-white border-2 border-black p-4">
+                            <div class="space-y-2">
+                                <div class="flex justify-between">
+                                    <span class="font-bold text-black">Manager Name:</span>
+                                    <span class="text-black font-bold">BAMBANG</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-bold text-black">Phone Number:</span>
+                                    <span class="text-black">08891289239</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Add Event Form -->
+    <div class="bg-white border-4 border-black neo-shadow mb-8">
+        <!-- Form Header -->
+        <div class="bg-green-400 border-b-4 border-black p-6">
+            <h2 class="text-3xl font-bold text-black">ADD NEW EVENT</h2>
+        </div>
+
+        <!-- Form Content -->
+        <div class="p-8">
+            <form action="/events/add" method="POST" class="space-y-6">
+                <!-- Event Name -->
+                <div class="bg-pink-200 border-4 border-black p-6">
+                    <label for="name" class="block text-xl font-bold text-black mb-4">EVENT NAME</label>
+                    <input type="text" id="name" name="name"
+                        class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black"
+                        placeholder="Enter event name...">
+                </div>
+
+                <!-- Event Description -->
+                <div class="bg-blue-200 border-4 border-black p-6">
+                    <label for="description" class="block text-xl font-bold text-black mb-4">DESCRIPTION</label>
+                    <textarea id="description" name="description" rows="4"
+                        class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black"
+                        placeholder="Enter event description..."></textarea>
+                </div>
+
+                <!-- Total Prize -->
+                <div class="bg-green-200 border-4 border-black p-6">
+                    <label for="totalPrize" class="block text-xl font-bold text-black mb-4">TOTAL PRIZE</label>
+                    <input type="text" id="totalPrize" name="totalPrize"
+                        class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black"
+                        placeholder="Enter total prize...">
+                </div>
+
+                <!-- Event Poster URL -->
+                <div class="bg-purple-200 border-4 border-black p-6">
+                    <label for="eventPoster" class="block text-xl font-bold text-black mb-4">EVENT POSTER URL</label>
+                    <input type="url" id="eventPoster" name="eventPoster"
+                        class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black"
+                        placeholder="https://example.com/poster.jpg">
+                </div>
+
+                <!-- Event Date -->
+                <div class="bg-cyan-200 border-4 border-black p-6">
+                    <label for="eventDate" class="block text-xl font-bold text-black mb-4">EVENT DATE</label>
+                    <input type="date" id="eventDate" name="eventDate"
+                        class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black">
+                </div>
+
+                <!-- Event Type -->
+                <div class="bg-orange-200 border-4 border-black p-6">
+                    <label for="eventType" class="block text-xl font-bold text-black mb-4">EVENT TYPE</label>
+                    <select id="eventType" name="eventType"
+                        class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black">
+                        <option value="ONLINE">ONLINE</option>
+                        <option value="OFFLINE">OFFLINE</option>
+                    </select>
+                </div>
+
+                <!-- Event Status -->
+                <div class="bg-yellow-200 border-4 border-black p-6">
+                    <label for="eventStatus" class="block text-xl font-bold text-black mb-4">EVENT STATUS</label>
+                    <select id="eventStatus" name="eventStatus"
+                        class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black">
+                        <option value="ACTIVE">ACTIVE</option>
+                        <option value="INACTIVE">INACTIVE</option>
+                    </select>
+                </div>
+
+                <!-- Game -->
+                <div class="bg-red-200 border-4 border-black p-6">
+                    <label for="GameId" class="block text-xl font-bold text-black mb-4">GAME</label>
+                    <select id="GameId" name="GameId"
+                        class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black">
+                        <option value="1">Wuthering Waves</option>
+                        <option value="2">Valorant</option>
+                    </select>
+                </div>
+
+                <!-- Form Buttons -->
+                <div class="flex space-x-4 pt-6">
+                    <button type="submit"
+                        class="bg-green-400 border-4 border-black neo-shadow px-8 py-4 text-black font-bold text-xl hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                        ADD EVENT
+                    </button>
+
+                    <a href="/events"
+                        class="inline-block bg-red-400 border-4 border-black neo-shadow px-8 py-4 text-black font-bold text-xl hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                        CANCEL
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Edit Event Form -->
+    <div class="bg-white border-4 border-black neo-shadow mb-8">
+        <!-- Form Header -->
+        <div class="bg-green-400 border-b-4 border-black p-6">
+            <h2 class="text-3xl font-bold text-black">EDIT EVENT</h2>
+        </div>
+
+        <!-- Form Content -->
+        <div class="p-8">
+            <form action="/events/edit/1" method="POST" class="space-y-6">
+                <!-- Event Name -->
+                <div class="bg-pink-200 border-4 border-black p-6">
+                    <label for="name" class="block text-xl font-bold text-black mb-4">EVENT NAME</label>
+                    <input type="text" id="name" name="name"
+                        class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black"
+                        placeholder="Enter event name...">
+                </div>
+
+                <!-- Event Description -->
+                <div class="bg-blue-200 border-4 border-black p-6">
+                    <label for="description" class="block text-xl font-bold text-black mb-4">DESCRIPTION</label>
+                    <textarea id="description" name="description" rows="4"
+                        class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black"
+                        placeholder="Enter event description..."></textarea>
+                </div>
+
+                <!-- Total Prize -->
+                <div class="bg-green-200 border-4 border-black p-6">
+                    <label for="totalPrize" class="block text-xl font-bold text-black mb-4">TOTAL PRIZE</label>
+                    <input type="text" id="totalPrize" name="totalPrize"
+                        class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black"
+                        placeholder="Enter total prize...">
+                </div>
+
+                <!-- Event Poster URL -->
+                <div class="bg-purple-200 border-4 border-black p-6">
+                    <label for="eventPoster" class="block text-xl font-bold text-black mb-4">EVENT POSTER URL</label>
+                    <input type="url" id="eventPoster" name="eventPoster"
+                        class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black"
+                        placeholder="https://example.com/poster.jpg">
+                </div>
+
+                <!-- Event Date -->
+                <div class="bg-cyan-200 border-4 border-black p-6">
+                    <label for="eventDate" class="block text-xl font-bold text-black mb-4">EVENT DATE</label>
+                    <input type="date" id="eventDate" name="eventDate"
+                        class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black">
+                </div>
+
+                <!-- Event Type -->
+                <div class="bg-orange-200 border-4 border-black p-6">
+                    <label for="eventType" class="block text-xl font-bold text-black mb-4">EVENT TYPE</label>
+                    <select id="eventType" name="eventType"
+                        class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black">
+                        <option value="Online">ONLINE</option>
+                        <option value="Offline">OFFLINE</option>
+                    </select>
+                </div>
+
+                <!-- Event Status -->
+                <div class="bg-yellow-200 border-4 border-black p-6">
+                    <label for="eventStatus" class="block text-xl font-bold text-black mb-4">EVENT STATUS</label>
+                    <select id="eventStatus" name="eventStatus"
+                        class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black">
+                        <option value="Upcoming">ACTIVE</option>
+                        <option value="Ongoing">INACTIVE</option>
+                    </select>
+                </div>
+
+                <!-- Game -->
+                <div class="bg-red-200 border-4 border-black p-6">
+                    <label for="GameId" class="block text-xl font-bold text-black mb-4">GAME</label>
+                    <select id="GameId" name="GameId"
+                        class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black">
+                        <option value="1">Wuthering Waves</option>
+                        <option value="2">Valorant</option>
+                    </select>
+                </div>
+
+                <!-- Form Buttons -->
+                <div class="flex space-x-4 pt-6">
+                    <button type="submit"
+                        class="bg-green-400 border-4 border-black neo-shadow px-8 py-4 text-black font-bold text-xl hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                        EDIT EVENT
+                    </button>
+
+                    <a href="/events"
+                        class="inline-block bg-red-400 border-4 border-black neo-shadow px-8 py-4 text-black font-bold text-xl hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                        CANCEL
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-8 text-center">
+        <div class="bg-black text-white border-4 border-black neo-shadow p-4">
+            <p class="font-bold">Demo for Sequelize Association</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+[
+    {
+        "name": "League of Legends: Wild Rift - National E-Sports",
+        "description": "Thank you to all the teams who competed during the season one global championship! We also want to give a huge shout out to all the fans who tuned in during Icons and made this event unforgettable. While this season has wrapped up, stay tuned for more Wild Rift esports announcements coming soon!",
+        "totalPrize": 12000000,
+        "eventPoster": "https://eslfaceitgroup.com/wp-content/uploads/2020/12/ESL-x-Wild-Rift-Announcement-Asia_v2-1024x493.png",
+        "eventDate": "2022-09-21",
+        "eventType": "OFFLINE",
+        "eventStatus": "ACTIVE",
+        "GameId": 1
+    },
+    {
+        "name": "League of Legends: Wild Rift - Interational E-Sports",
+        "description": "All weapons that are obtainable in this game mode are allowed to be used.",
+        "totalPrize": 50000000,
+        "eventPoster": "https://eslfaceitgroup.com/wp-content/uploads/2020/12/ESL-x-Wild-Rift-Announcement-Asia_v2-1024x493.png",
+        "eventDate": "2022-11-15",
+        "eventType": "OFFLINE",
+        "eventStatus": "ACTIVE",
+        "GameId": 1
+    },
+    {
+        "name": "League of Legends: Wild Rift - SEA E-Sports",
+        "description": "All weapons that are obtainable in this game mode are allowed to be used.",
+        "totalPrize": 30000000,
+        "eventPoster": "https://eslfaceitgroup.com/wp-content/uploads/2020/12/ESL-x-Wild-Rift-Announcement-Asia_v2-1024x493.png",
+        "eventDate": "2022-12-20",
+        "eventType": "OFFLINE",
+        "eventStatus": "ACTIVE",
+        "GameId": 1
+    },
+    {
+        "name": "Valorant 5v5 - Monday",
+        "description": "Free-to-enter Single Elimination 5v5 mode. All games are played as BO1.",
+        "totalPrize": 30000000,
+        "eventPoster": "https://cdn.sanity.io/images/dsfx7636/news_live/a9118d1f77e9f5fd0c292a0c7c4fb860e25af23e-1920x1080.jpg",
+        "eventDate": "2022-11-07",
+        "eventType": "OFFLINE",
+        "eventStatus": "ACTIVE",
+        "GameId": 4
+    },
+    {
+        "name": "Valorant 5v5 - Tuesday",
+        "description": "Free-to-enter Single Elimination 5v5 mode. All games are played as BO1.",
+        "totalPrize": 40000000,
+        "eventPoster": "https://cdn.sanity.io/images/dsfx7636/news_live/a9118d1f77e9f5fd0c292a0c7c4fb860e25af23e-1920x1080.jpg",
+        "eventDate": "2022-11-08",
+        "eventType": "OFFLINE",
+        "eventStatus": "ACTIVE",
+        "GameId": 4
+    },
+    {
+        "name": "Treasuer Hunt - Genshin Impact",
+        "description": "A treasure hunt event in Genshin Impact where players can win prizes by finding hidden treasures in the game world.",
+        "totalPrize": 15000000,
+        "eventPoster": "https://fastcdn.hoyoverse.com/content-v2/hk4e/114071/349fc94b906f78f03ab81f170b25e86e_8101033699173946332.jpg",
+        "eventDate": "2022-11-8",
+        "eventType": "ONLINE",
+        "eventStatus": "ACTIVE",
+        "GameId": 8
+    },
+    {
+        "name": "Treasuer Hunt - Wuthering Waves",
+        "description": "A treasure hunt event in Genshin Impact where players can win prizes by finding hidden treasures in the game world.",
+        "totalPrize": 15000000,
+        "eventPoster": "https://admin.esports.gg/wp-content/uploads/2024/08/Wuthering-Waves-1.2-events-tasks-and-rewards-1568x882.jpg",
+        "eventDate": "2022-11-8",
+        "eventType": "ONLINE",
+        "eventStatus": "ACTIVE",
+        "GameId": 9
+    },
+    {
+        "name": "ONE Esports Dota 2 Invitationals",
+        "description": "ONE Esports partner with PGL to bring a new series of $500,000 USD tournaments for Dota 2.[1] The ONE Esports Dota 2 Invitational Jakarta, held in the Indonesia Convention Exhibition, will have 12 of the world's best team clash in November 2020.",
+        "totalPrize": 18000000,
+        "eventPoster": "https://static.republika.co.id/uploads/images/inpicture_slide/one-esports-dota_200304211713-772.jpg",
+        "eventDate": "2022-11-23",
+        "eventType": "OFFLINE",
+        "eventStatus": "INACTIVE",
+        "GameId": 3
+    },
+    {
+        "name": "CS:GO 5v5 - Okey Team, Follow my Command",
+        "description": "All weapons that are obtainable in this game mode are allowed to be used.",
+        "totalPrize": 20000000,
+        "eventPoster": "https://miro.medium.com/max/800/1*UMKvTYLBrQycJ11Z3AFayg.jpeg",
+        "eventDate": "2022-11-8",
+        "eventType": "OFFLINE",
+        "eventStatus": "INACTIVE",
+        "GameId": 5
+    }
+]

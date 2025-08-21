@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("./partials/head.ejs") %>
+
+    <body class="bg-yellow-300 min-h-screen p-6 max-w-7xl mx-auto">
+        <!-- Header -->
+        <%- include("./partials/header.ejs") %>
+
+            <!-- Add Event Form -->
+            <div class="bg-white border-4 border-black neo-shadow mb-8">
+                <!-- Form Header -->
+                <div class="bg-green-400 border-b-4 border-black p-6">
+                    <h2 class="text-3xl font-bold text-black">ADD NEW EVENT</h2>
+                </div>
+
+                <!-- Form Content -->
+                <div class="p-8">
+                    <form action="/events/add" method="POST" class="space-y-6">
+                        <!-- Event Name -->
+                        <div class="bg-pink-200 border-4 border-black p-6">
+                            <label for="name" class="block text-xl font-bold text-black mb-4">EVENT NAME</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black"
+                                placeholder="Enter event name...">
+                        </div>
+
+                        <!-- Event Description -->
+                        <div class="bg-blue-200 border-4 border-black p-6">
+                            <label for="description" class="block text-xl font-bold text-black mb-4">DESCRIPTION</label>
+                            <textarea id="description" name="description" rows="4"
+                                class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black"
+                                placeholder="Enter event description..."></textarea>
+                        </div>
+
+                        <!-- Total Prize -->
+                        <div class="bg-green-200 border-4 border-black p-6">
+                            <label for="totalPrize" class="block text-xl font-bold text-black mb-4">TOTAL PRIZE</label>
+                            <input type="text" id="totalPrize" name="totalPrize"
+                                class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black"
+                                placeholder="Enter total prize...">
+                        </div>
+
+                        <!-- Event Poster URL -->
+                        <div class="bg-purple-200 border-4 border-black p-6">
+                            <label for="eventPoster" class="block text-xl font-bold text-black mb-4">EVENT POSTER
+                                URL</label>
+                            <input type="url" id="eventPoster" name="eventPoster"
+                                class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black"
+                                placeholder="https://example.com/poster.jpg">
+                        </div>
+
+                        <!-- Event Date -->
+                        <div class="bg-cyan-200 border-4 border-black p-6">
+                            <label for="eventDate" class="block text-xl font-bold text-black mb-4">EVENT DATE</label>
+                            <input type="date" id="eventDate" name="eventDate"
+                                class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black">
+                        </div>
+
+                        <!-- Event Type -->
+                        <div class="bg-orange-200 border-4 border-black p-6">
+                            <label for="eventType" class="block text-xl font-bold text-black mb-4">EVENT TYPE</label>
+                            <select id="eventType" name="eventType"
+                                class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black">
+                                <option value="ONLINE">ONLINE</option>
+                                <option value="OFFLINE">OFFLINE</option>
+                            </select>
+                        </div>
+
+                        <!-- Event Status -->
+                        <div class="bg-yellow-200 border-4 border-black p-6">
+                            <label for="eventStatus" class="block text-xl font-bold text-black mb-4">EVENT
+                                STATUS</label>
+                            <select id="eventStatus" name="eventStatus"
+                                class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black">
+                                <option value="ACTIVE">ACTIVE</option>
+                                <option value="INACTIVE">INACTIVE</option>
+                            </select>
+                        </div>
+
+                        <!-- Game -->
+                        <div class="bg-red-200 border-4 border-black p-6">
+                            <label for="GameId" class="block text-xl font-bold text-black mb-4">GAME</label>
+                            <select id="GameId" name="GameId"
+                                class="w-full p-4 text-lg font-bold text-black bg-white border-4 border-black focus:outline-none focus:ring-0 focus:border-black">
+                                <% games.forEach((g)=> { %>
+                                    <option value="<%= g.id  %>">
+                                        <%= g.name %>
+                                    </option>
+                                    <% }) %>
+                            </select>
+                        </div>
+
+                        <!-- Form Buttons -->
+                        <div class="flex space-x-4 pt-6">
+                            <button type="submit"
+                                class="bg-green-400 border-4 border-black neo-shadow px-8 py-4 text-black font-bold text-xl hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                                ADD EVENT
+                            </button>
+
+                            <a href="/events"
+                                class="inline-block bg-red-400 border-4 border-black neo-shadow px-8 py-4 text-black font-bold text-xl hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
+                                CANCEL
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <%- include("./partials/footer.ejs") %>
+    </body>
+
+</html>

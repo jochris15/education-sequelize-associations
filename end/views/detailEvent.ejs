@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("./partials/head.ejs") %>
+
+    <body class="bg-yellow-300 min-h-screen p-6 max-w-7xl mx-auto">
+        <!-- Header -->
+        <%- include("./partials/header.ejs") %>
+
+            <!-- Event Detail -->
+            <div class="bg-white border-4 border-black neo-shadow mb-8">
+                <!-- Event Header -->
+                <div class="bg-purple-400 border-b-4 border-black p-6">
+                    <div class="flex justify-between items-start">
+                        <h2 class="text-4xl font-bold text-black">
+                            <%= event.name %>
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Event Content -->
+                <div class="p-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Left Column - Event Poster & Basic Info -->
+                        <div class="flex flex-col space-y-6 h-full">
+                            <!-- Event Poster -->
+                            <div class="bg-pink-200 border-4 border-black p-6">
+                                <h3 class="text-2xl font-bold text-black mb-4">EVENT POSTER</h3>
+                                <div class="bg-gray-100 border-2 border-black p-4">
+                                    <img src="<%= event.eventPoster  %>" alt="<%= event.name  %>"
+                                        class="w-full h-64 object-cover border-2 border-black bg-gray-200">
+                                </div>
+                            </div>
+
+                            <!-- Event Basic Info -->
+                            <div class="bg-cyan-200 border-4 border-black p-6 flex-1">
+                                <h3 class="text-2xl font-bold text-black mb-4">EVENT INFORMATION</h3>
+                                <div class="space-y-4">
+                                    <div class="bg-white border-2 border-black p-4">
+                                        <span class="font-bold text-black text-lg">EVENT DATE:</span>
+                                        <p class="text-black font-bold text-xl mt-1">
+                                            <%= event.formatDate %>
+                                        </p>
+                                    </div>
+                                    <div class="bg-white border-2 border-black p-4">
+                                        <span class="font-bold text-black text-lg">EVENT TYPE:</span>
+                                        <span
+                                            class="bg-yellow-300 border-2 border-black px-3 py-1 text-black font-bold text-lg ml-2">
+                                            <%= event.eventType %>
+                                        </span>
+                                    </div>
+                                    <div class="bg-white border-2 border-black p-4">
+                                        <span class="font-bold text-black text-lg">EVENT STATUS:</span>
+                                        <span
+                                            class="bg-green-300 border-2 border-black px-3 py-1 text-black font-bold text-lg ml-2">
+                                            <%= event.eventStatus %>
+                                        </span>
+                                    </div>
+                                    <div class="bg-white border-2 border-black p-4">
+                                        <span class="font-bold text-black text-lg">TOTAL PRIZE:</span>
+                                        <p class="text-black font-bold text-2xl mt-1 text-green-600">
+                                            <%= event.formatPrize %>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column - Description & Game Info -->
+                        <div class="flex flex-col space-y-6 h-full">
+                            <!-- Event Description -->
+                            <div class="bg-blue-200 border-4 border-black p-6">
+                                <h3 class="text-2xl font-bold text-black mb-4">EVENT DESCRIPTION</h3>
+                                <div class="bg-white border-2 border-black p-4">
+                                    <p class="text-black text-lg leading-relaxed">
+                                        <%= event.description %>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Game Information -->
+                            <div class="bg-green-200 border-4 border-black p-6">
+                                <h3 class="text-2xl font-bold text-black mb-4">GAME INFORMATION</h3>
+                                <div class="bg-white border-2 border-black p-4">
+                                    <div class="flex items-center space-x-4 mb-4">
+                                        <img src="<%= event?.Game?.gameImg  %>" alt="Valorant"
+                                            class="w-16 h-16 object-cover border-2 border-black rounded-none bg-gray-200">
+                                        <div>
+                                            <h4 class="font-bold text-black text-xl">
+                                                <%= event?.Game?.name%>
+                                            </h4>
+                                            <p class="text-black">by <%= event?.Game?.developer %>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <div class="flex justify-between">
+                                            <span class="font-bold text-black">Release Date:</span>
+                                            <span class="text-black">
+                                                <%= event?.Game?.formatDate %>
+                                            </span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span class="font-bold text-black">Genre:</span>
+                                            <span
+                                                class="bg-cyan-300 border-2 border-black px-2 py-1 text-black font-bold text-sm">
+                                                <%= event?.Game?.genre %>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Event Manager Information -->
+                            <div class="bg-orange-200 border-4 border-black p-6 flex-1">
+                                <h3 class="text-2xl font-bold text-black mb-4">EVENT MANAGER</h3>
+                                <div class="bg-white border-2 border-black p-4">
+                                    <div class="space-y-2">
+                                        <div class="flex justify-between">
+                                            <span class="font-bold text-black">Manager Name:</span>
+                                            <span class="text-black font-bold">
+                                                <%= event?.Game?.Manager?.name %>
+                                            </span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span class="font-bold text-black">Phone Number:</span>
+                                            <span class="text-black">
+                                                <%= event?.Game?.Manager?.phone %>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Footer -->
+            <%- include("./partials/footer.ejs") %>
+    </body>
+
+</html>
