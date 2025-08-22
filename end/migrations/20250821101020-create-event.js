@@ -18,7 +18,7 @@ module.exports = {
         allowNull: false
       },
       totalPrize: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: false
       },
       eventPoster: {

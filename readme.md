@@ -163,19 +163,17 @@ npx sequelize model:create --name Manager --attributes name:string,phone:string,
 ```
 
 **Table Events**
-Table Events
-
 | Column name     | type      | constraint       |
 |-----------------|:---------:|:----------------:|
 | name            | string    | not null         |
 | description     | text      | not null         |
-| totalPrize      | string    | not null         |
+| totalPrize      | integer   | not null         |
 | eventPoster     | string    | not null         |
 | eventDate       | date      | not null         |
-| eventType       | string    | default : Online |
+| eventType       | string    | default : ONLINE |
 | eventStatus     | string    | not null         |
 ```
-npx sequelize model:create --name Event --attributes name:string,description:text,totalPrize:string,eventPoster:string,eventDate:date,eventType:string,eventStatus:string
+npx sequelize model:create --name Event --attributes name:string,description:text,totalPrize:integer,eventPoster:string,eventDate:date,eventType:string,eventStatus:string
 ```
 
 ## Custom Migration
@@ -199,10 +197,10 @@ npx sequelize seed:create --name seeder-events
 
 | Method | Route                | Deskripsi                                                                         |
 | :----- | :----                | :---------------------------------------------------------------------            |
-| GET    | /games               | Menampilkan data `Game` beserta dengan manager dan event-event yang dimilikinya   |  
+| GET    | /games               | Menampilkan data `Game` beserta dengan managernya                                 |  
 | GET    | /managers            | Menampilkan data `Manager` beserta dengan gamenya                                 |
-| GET    | /events              | Menampilkan data `Event` beserta dengan game dan managernya                       |
-| GET    | /events/detail/:id   | Menampilkan data satuan `Event`                                                   |
+| GET    | /events              | Menampilkan data `Event`                                                          |
+| GET    | /events/detail/:id   | Menampilkan data satuan `Event` beserta dengan `Manager` dan `Game`nya            |
 | GET    | /events/add          | Menampilkan form untuk menambahkan data `Event`                                   |
 | POST   | /events/add          | Menambahkan data `Event`                                                          |
 | GET    | /events/edit/:id     | Menampilkan form untuk update data `Event`                                        |
