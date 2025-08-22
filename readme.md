@@ -126,6 +126,8 @@ const games = await Game.findAll({
 ## Demo
 Pada demo kali ini hanya akan membahas asosiasi `One-to-One` dan `One-to-Many`.
 
+<img src="./ERD.png"/>
+
 ### Setup 
 Database : esport_app
 
