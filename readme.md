@@ -124,7 +124,7 @@ const games = await Game.findAll({
 });
 ```
 ## Demo
-Pada demo kali ini hanya akan membahas asosiasi `One-to-Many` dan `Many-to-Many`.
+Pada demo kali ini hanya akan membahas asosiasi `One-to-One` dan `One-to-Many`.
 
 ### Setup 
 Database : esport_app
