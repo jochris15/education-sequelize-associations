@@ -71,7 +71,7 @@ class EventController {
             const { id } = req.params
             const { name, description, totalPrize, eventPoster, eventDate, eventType, eventStatus, GameId } = req.body
 
-            await Event.create({ name, description, totalPrize, eventPoster, eventDate, eventType, eventStatus, GameId }, {
+            await Event.update({ name, description, totalPrize, eventPoster, eventDate, eventType, eventStatus, GameId }, {
                 where: {
                     id
                 }
